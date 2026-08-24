@@ -1,0 +1,94 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+    background:
+        linear-gradient(rgba(10, 15, 25, 0.75), rgba(10, 15, 25, 0.9)),
+        url("/images/home-bg.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 500px;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+}
+
+.emoji {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    animation: flutuar 2s ease-in-out infinite;
+}
+
+.title {
+    margin: 0;
+    font-size: 6rem;
+    line-height: 1;
+    font-weight: 800;
+    color: #d6b56c;
+    text-shadow: 0 0 25px rgba(214, 181, 108, 0.3);
+}
+
+.subtitle {
+    margin: 1rem 0 0.75rem;
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+.text {
+    max-width: 380px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.4rem;
+    border-radius: 10px;
+    background: #d6b56c;
+    color: #171717;
+    font-weight: 600;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.button:hover {
+    background: #e5c77f;
+    transform: translateY(-2px);
+}
+
+@keyframes flutuar {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+@media (max-width: 600px) {
+    .content {
+        padding: 2.5rem 1.5rem;
+    }
+    .title {
+        font-size: 4.5rem;
+    }
+    .subtitle {
+        font-size: 1.3rem;
+    }
+}
