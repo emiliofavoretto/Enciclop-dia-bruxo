@@ -1,7 +1,7 @@
 .personagens {
     min-height: 100vh;
-    background: #929191; 
-    color: #333a40;
+    background: var(--fundo);
+    color: var(--text2);
 }
 
 .introducao {
@@ -13,7 +13,7 @@
 
 .sectionLabel {
     margin: 0 0 12px;
-    color: #007bff; 
+    color: #007bff;
     font-weight: 600;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -24,13 +24,13 @@
     font-size: clamp(2.8rem, 6vw, 4.5rem);
     line-height: 1.1;
     font-weight: 700;
-    color: #1a1e21; 
+    color: #1a1e21;
     letter-spacing: -1.5px;
 }
 
 .description {
     margin: 0;
-    color: #6c757d; 
+    color: #2f3235;
     font-size: 1.15rem;
     max-width: 700px;
     line-height: 1.6;
@@ -46,27 +46,27 @@
 .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 25px; 
+    gap: 25px;
 }
 
 .card {
     padding: 30px;
     background: #ffffff;
-    border: 1px solid #e9ecef; 
+    border: 1px solid #e9ecef;
     border-radius: 12px;
     transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
 
 .card:hover {
     transform: translateY(-8px);
-    border-color: #007bff; 
-    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.12); 
+    border-color: #007bff;
+    box-shadow: 0 12px 24px rgba(0, 123, 255, 0.12);
 }
 
 .card h2 {
     margin: 0 0 15px;
-    color: #1a1e21; 
+    color: #1a1e21;
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: -0.5px;
@@ -116,7 +116,7 @@
     width: 45px;
     height: 45px;
     border: 3px solid #e9ecef;
-    border-top: 3px solid #007bff; 
+    border-top: 3px solid #007bff;
     border-radius: 50%;
     animation: girar 0.8s linear infinite;
 }

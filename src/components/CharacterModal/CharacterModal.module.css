@@ -135,7 +135,6 @@
 
 .favoritado svg {
     animation: favorito 0.25s ease;
-}
 
 @keyframes favorito {
     0% {

@@ -7,3 +7,36 @@ body {
     margin: 0;
     padding: 0;
 }
+
+:root {
+  --fundo: #0a0a0c;
+  --card: #16181d;
+  --text: #f0f0f5;
+  --text2: #a0a0b0;
+  --border: #2e323b;
+  --color: #e0a96d;
+}
+
+[data-theme='dark'] {
+  --fundo: #f8f9fa;
+  --card: #ffffff;
+  --text: #1a1a1a;
+  --text2: #1a1818;
+  --border: #e0e0e0;
+  --color: #8c6d3b;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
