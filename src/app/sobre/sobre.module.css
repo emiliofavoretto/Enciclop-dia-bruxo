@@ -1,5 +1,8 @@
 .pagina {
     min-height: 100vh;
+    background: var(--fundo);
+    color: var(--text);
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -19,7 +22,7 @@
     font-weight: 700;
     text-align: center;
     margin-bottom: 1rem;
-    color: rgb(3, 3, 3);
+    color: rgb(25, 28, 213);
 }
 
 .descricao {
@@ -35,6 +38,7 @@
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
+    border: #39393a;
 }
 
 .turma,

@@ -34,7 +34,7 @@ export default function Sobre() {
                     <div className={styles.integrantes}>
                         <h3>👤 Integrantes</h3>
                         <p>Emilio Favoretto</p>
-                        <p>Danilo Jorge</p>
+                        <p></p>
                     </div>
                 </div>
             </section>
