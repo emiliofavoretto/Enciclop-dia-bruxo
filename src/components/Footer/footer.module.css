@@ -1,0 +1,18 @@
+.footer {
+  width: 100%;
+  background-color: #373b3e;
+  padding: 25px 0;
+  margin-top: auto;
+  border-top: solid 2px #0069d9;
+}
+
+.footertext {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+}
+
+.footertext p {
+  margin: 0;
+}

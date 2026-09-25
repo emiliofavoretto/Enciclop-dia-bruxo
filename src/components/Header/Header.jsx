@@ -55,7 +55,7 @@ export default function Header() {
                     <Link href="/sobre" className={styles.link}>
                         Sobre
                     </Link>
-                    <button
+                    <button 
                         type="button"
                         className={styles.temas}
                         onClick={alternarTema}

@@ -56,6 +56,16 @@
     transition: color 0.3s ease, background-size 0.3s ease;
 }
 
+.temas {
+    width: 2rem;
+    height: 2rem;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .link:hover {
     color: #37d4c7;
     background-size: 100% 2px;

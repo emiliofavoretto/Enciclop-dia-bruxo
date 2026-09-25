@@ -1,4 +1,5 @@
 import Header from "@/components/Header/Header";
+import Footer from '@/components/Footer/Footer';
 import Link from "next/link";
 import styles from "./page.module.css";
 
@@ -37,7 +38,7 @@ export default function Home() {
                 <p className={styles.sectionLabel}>
                     SOBRE A Enciclopedia-Bruxo
                 </p>
-                <p>A Enciclopedia-Bruxo é uma enciclopédia digital criada para reunir informações sobre os personagens do universo de HarryPotter em um só lugar para qualquer fã ou interesado no universo de J.K. Rowling.</p>
+                <p className={styles.desc}>A Enciclopedia-Bruxo é uma enciclopédia digital criada para reunir informações sobre os personagens do universo de HarryPotter em um só lugar para qualquer fã ou interesado no universo de J.K. Rowling.</p>
             </section>
 
             <section className={styles.technologies}>
@@ -67,6 +68,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+            
+            <Footer/>
         </main>
     );
 }
