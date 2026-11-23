@@ -6,11 +6,15 @@ export default function CharacterCard({ personagem, onClick }) {
         <article className={styles.card} onClick={onClick}>
 
             <div className={styles.imagem}>
-                <Image
-                    src={personagem.image || "/images/sem-foto.png"}
-                    alt={personagem.name}
-                    fill
-                />
+                {personagem.image ? (
+                    <img
+                        src={personagem.image}
+                        alt={personagem.name}
+                        className={styles.imagem}
+                    />
+                ) : (
+                    <div className={styles.semImagem}>Sem imagem</div>
+                )}
             </div>
 
             <div className={styles.informacoes}>
