@@ -3,8 +3,8 @@ const nextConfig = {
     images: {
         remotePatterns: [
             {
-                protocol: "https",
-                hostname: "ik.imagekit.io",
+                protocol: 'https',
+                hostname: '**', // Libera imagens HTTPS de qualquer domínio da API
             },
         ],
     },

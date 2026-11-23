@@ -15,20 +15,37 @@ export default function Personagens() {
     const [personagemSelecionado, setPersonagemSelecionado] = useState(null);
 
     useEffect(() => {
-        async function buscarPersonagens() {
-            try {
-                const resposta = await axios.get('https://hp-api.onrender.com/api/characters');
-                setPersonagens(resposta.data);
-            } catch (error) {
-                console.error(error);
-                setErro('Não foi possível carregar os personagens.');
-            } finally {
-                setCarregando(false);
-            }
-        }
+    async function buscarPersonagens() {
+        try {
+            const resposta = await axios.get('https://api.potterdb.com/v1/characters?page[size]=50');
 
-        buscarPersonagens();
-    }, []);
+            const formatados = resposta.data.data
+                .filter((item) => item.attributes.image) 
+                .map((item) => ({
+                    id: item.id,
+                    name: item.attributes.name,
+                    house: item.attributes.house,
+                    species: item.attributes.species,
+                    patronus: item.attributes.patronus,
+                    dateOfBirth: item.attributes.born,
+                    eyeColour: item.attributes.eye_color,
+                    hairColour: item.attributes.hair_color,
+                    actor: item.attributes.actor,
+                    alive: !item.attributes.died, 
+                    image: item.attributes.image,
+                }));
+
+            setPersonagens(formatados);
+        } catch (error) {
+            console.error(error);
+            setErro('Não foi possível carregar os personagens.');
+        } finally {
+            setCarregando(false);
+        }
+    }
+
+    buscarPersonagens();
+}, []);
 
     return (
         <main className={styles.personagens}>
